@@ -2,7 +2,13 @@
   "name": "javascript-development-environment",
   "version": "1.0.1",
   "description": "JavaScript development environment packages for use to build a Node.js project",
-  "scripts": {},
+  "scripts": {
+    "prestart": "node --experimental-modules buildScripts/startMessage.mjs",
+    "start": "npm-run-all --parallel open:src",
+    "share": "npm-run-all --parallel open:src localtunnel",
+    "open:src": "node --experimental-modules buildScripts/srcServer.mjs",
+    "localtunnel": "lt --port 3000"
+  },
   "author": "Andreas Spannagel",
   "license": "MIT",
   "dependencies": {
