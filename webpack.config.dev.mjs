@@ -9,7 +9,7 @@ export default {
   output: {
     path: path.resolve(__dirname, 'src'),
     publicPath: '/',
-    filename: 'bundle.js',
+    filename: 'bundle.mjs',
   },
   mode: 'development',
 }
