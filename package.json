@@ -51,5 +51,10 @@
   },
   "comments": {
     "extract-text-webpack-plugin": "should no longer be used with webpack 4. use mini-css-extract-plugin instead"
+  },
+  "todos": {
+    "prettier": "add to project",
+    "eslint": "check configuration",
+    "eslint-watch": "still worth it in 2019?"
   }
 }
