@@ -11,5 +11,13 @@ export default {
     publicPath: '/',
     filename: 'bundle.mjs',
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
+      },
+    ],
+  },
   mode: 'development',
 }
